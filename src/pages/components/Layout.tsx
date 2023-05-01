@@ -1,8 +1,8 @@
 import React, { ReactNode } from "react";
-import { Meta } from "./Meta";
+import Meta from "./Meta";
 import { IMeta } from "./Meta";
 
-export const Layout = ({ children }: { children?: ReactNode }) => {
+const Layout = ({ children }: { children?: ReactNode }) => {
   const metaData: IMeta = {
     title: "TRAVEL NEXT",
     description:
@@ -21,3 +21,5 @@ export const Layout = ({ children }: { children?: ReactNode }) => {
     </>
   );
 };
+
+export default Layout;
